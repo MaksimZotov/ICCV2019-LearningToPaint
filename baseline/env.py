@@ -37,6 +37,8 @@ class Paint:
         global train_num, test_num
         for i in range(1000):
             img_id = i
+            if img_id == 140 or img_id == 660 or img_id == 850 or img_id == 936:
+                continue
             try:
                 img = cv2.imread('data/cats/' + str(img_id) + '.jpg', cv2.IMREAD_UNCHANGED)
                 img = cv2.resize(img, (width, width))
