@@ -42,7 +42,7 @@ class Paint:
             try:
                 img = cv2.imread('data/cats/' + str(img_id) + '.jpg', cv2.IMREAD_UNCHANGED)
                 img = cv2.resize(img, (width, width))
-                if i > 10:
+                if i > 100:
                     train_num += 1
                     img_train.append(img)
                 else:
