@@ -38,7 +38,7 @@ class Paint:
         for i in range(1000):
             img_id = i
             try:
-                img = cv2.imread('data/cats/' + img_id + '.jpg', cv2.IMREAD_UNCHANGED)
+                img = cv2.imread('data/cats/' + str(img_id) + '.jpg', cv2.IMREAD_UNCHANGED)
                 img = cv2.resize(img, (width, width))
                 if i > 10:
                     train_num += 1
